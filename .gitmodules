@@ -1,6 +1,6 @@
 [submodule "Andromeda.Installer"]
 	path = Andromeda.Installer
-	url = ./Andromeda.Installer
+	url = https://github.com/akramboussanni/Andromeda.Installer
 [submodule "Andromeda.Mod"]
 	path = Andromeda.Mod
-	url = ./Andromeda.Mod
+	url = https://github.com/akramboussanni/Andromeda.Mod.git
