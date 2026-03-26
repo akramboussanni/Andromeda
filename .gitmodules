@@ -4,3 +4,9 @@
 [submodule "Andromeda.Mod"]
 	path = Andromeda.Mod
 	url = https://github.com/akramboussanni/Andromeda.Mod.git
+[submodule "Andromeda.Core"]
+	path = Andromeda.Core
+	url = https://github.com/akramboussanni/Andromeda.Core.git
+[submodule "Andromeda.Orchestrator"]
+	path = Andromeda.Orchestrator
+	url = https://github.com/akramboussanni/Andromeda.Orchestrator.git
