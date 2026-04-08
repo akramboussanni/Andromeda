@@ -12,3 +12,5 @@ CLAUDE.md
 tools/Test-Ports.ps1
 tools/port_client.py
 tools/port_server.py
+update.bat
+bot/
