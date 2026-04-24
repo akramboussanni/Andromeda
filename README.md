@@ -1,6 +1,6 @@
 # Andromeda
 
-![Andromeda banner](Andromeda.Mod/Assets/banner.png)
+![Andromeda banner](Assets/banner.png)
 
 Andromeda is a community-run platform that keeps **Enemy On Board** playable through modern hosting, runtime patches, and player-first tooling.
 
@@ -10,6 +10,7 @@ Andromeda is a community-run platform that keeps **Enemy On Board** playable thr
 ## Community First
 
 Discord is the center of the Andromeda community for support, announcements, testing coordination, and finding people to play with.
+It is active, and includes live player-count visibility through Andromeda integrations.
 
 - Discord invite: **https://discord.gg/fMbrCUKHP8**
 - Join first if you want help setting up or troubleshooting quickly.
@@ -51,6 +52,6 @@ It combines a client mod, installer, backend API, and game-session host runtime 
 
 ## Community
 
-Join the Andromeda Discord for support, announcements, matchmaking, and development updates:
+Join the Andromeda Discord for support, announcements, matchmaking, live player counts, and development updates:
 
 **https://discord.gg/fMbrCUKHP8**
