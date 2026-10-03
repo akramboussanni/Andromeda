@@ -7,7 +7,7 @@ Players and server operators do not need to clone these repositories. Download t
 For a bootstrap-only install, download and run `server/Setup-Andromeda-Server.ps1`; it fetches the latest published server bundle. Maintainers build the deterministic release zip with:
 
 ```bash
-python server/build_server_bundle.py --version 0.11.5 --mod-version 0.11.5
+python server/build_server_bundle.py --version 0.11.6 --mod-version 0.11.6
 ```
 
 `Andromeda.Orchestrator` is retained for advanced multi-host deployments only.

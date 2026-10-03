@@ -18,8 +18,8 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--core", type=Path, default=ROOT.parent / "Andromeda.Core")
     parser.add_argument("--output", type=Path, default=ROOT / "dist" / "Andromeda.Server.Windows.zip")
-    parser.add_argument("--version", default="0.11.5")
-    parser.add_argument("--mod-version", default="0.11.5")
+    parser.add_argument("--version", default="0.11.6")
+    parser.add_argument("--mod-version", default="0.11.6")
     args = parser.parse_args()
     core = args.core.resolve()
     if not (core / "setup_server.py").is_file():

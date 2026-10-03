@@ -6,11 +6,11 @@ $zip = Join-Path $env:TEMP "Andromeda.Server.Windows.zip"
 Write-Host "Downloading the Andromeda Windows server bundle..."
 Invoke-WebRequest -UseBasicParsing -Uri $release -OutFile $zip
 if (Test-Path $root) {
-    $backup = "$root.backup-$(Get-Date -Format yyyyMMdd-HHmmss)"
-    Move-Item $root $backup
-    Write-Host "Previous installation backed up to $backup"
+    Write-Host "Existing Andromeda installation found. Updating files in place..."
+    Write-Host "The Python venv, .env, downloaded game, and Cloudflare service will be reused."
+} else {
+    New-Item -ItemType Directory -Force -Path $root | Out-Null
 }
-New-Item -ItemType Directory -Force -Path $root | Out-Null
 Expand-Archive -Path $zip -DestinationPath $root -Force
 Remove-Item $zip -Force
 
