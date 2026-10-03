@@ -1,5 +1,17 @@
 # Andromeda
 
+## Host a server on Windows
+
+Players and server operators do not need to clone these repositories. Download the Windows server bundle from Releases, extract it, and run `core\Setup-Andromeda-Server.bat`. The standard deployment runs a single API, `Andromeda.Core`, which starts game sessions locally.
+
+For a bootstrap-only install, download and run `server/Setup-Andromeda-Server.ps1`; it fetches the latest published server bundle. Maintainers build the deterministic release zip with:
+
+```bash
+python server/build_server_bundle.py --version 0.11.2 --mod-version 0.11.1
+```
+
+`Andromeda.Orchestrator` is retained for advanced multi-host deployments only.
+
 Andromeda is a game mod distribution setup with two coordinated repositories: `Andromeda.Mod` and `Andromeda.Installer`.
 
 `Andromeda.Mod` contains the gameplay and runtime patching logic.
