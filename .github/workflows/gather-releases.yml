@@ -43,7 +43,8 @@ jobs:
           $expected = [Version]"$version.0"
           $dll = (Resolve-Path 'mod_assets/Andromeda.Mod.dll').Path
           $assemblyVersion = [Reflection.AssemblyName]::GetAssemblyName($dll).Version
-          $fileVersion = [Diagnostics.FileVersionInfo]::GetVersionInfo($dll).FileVersion
+          $fileInfo = [Diagnostics.FileVersionInfo]::GetVersionInfo($dll)
+          $fileVersion = [Version]::new($fileInfo.FileMajorPart, $fileInfo.FileMinorPart, $fileInfo.FileBuildPart, $fileInfo.FilePrivatePart)
           if ($assemblyVersion -ne $expected -or [Version]$fileVersion -ne $expected) {
             throw "Mod DLL version mismatch: assembly=$assemblyVersion file=$fileVersion expected=$expected"
           }
